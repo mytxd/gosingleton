@@ -8,6 +8,7 @@ A simple singleton library for Golang project
     go get github.com/mytxd/gosingleton
 ```
 
+## example
 ```
     package main
 
