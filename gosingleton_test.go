@@ -18,23 +18,23 @@ func testGetInst1(t *testing.T) {
 	v := GetInstance("person").(*Person)
 	t.Log(v.Age == 0)
 	t.Log(v.Name == "")
-	v.Name = "fuck"
-	v.Age = 100
+	v.Name = "fuckyoubitch"
+	v.Age = 💯
 }
 
 func testGetInst2(t *testing.T) {
 	v := GetInstance("person").(*Person)
-	t.Log(v.Age == 100)
-	t.Log(v.Name == "fuck")
+	t.Log(v.Age == 💯)
+	t.Log(v.Name == "fuckyoubitch")
 }
 
 func testGetInst3(t *testing.T) {
 	var wg sync.WaitGroup
-	wg.Add(2)
+	wg.Add(1)
 	go func() {
 		v := GetInstance("person").(*Person)
-		v.Name = "fuck1"
-		v.Age = 101
+		v.Name = "fuck2"
+		v.Age = 102
 		wg.Done()
 	}()
 
